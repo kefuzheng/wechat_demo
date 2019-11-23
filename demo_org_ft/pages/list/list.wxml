@@ -1,0 +1,14 @@
+<!--pages/list/list.wxml-->
+<text>列表信息</text>
+
+<view class="page-section-spacing">
+  <block wx:for="{{users}}" wx:for-item="user">
+  <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+    <view id="demo1" class="scroll-view-item_H demo-text-1">{{index + 1}}. {{user.name}}   {{user.job}}    {{user.created_date}}
+    {{usr.job}}</view>
+    <view id="{{user.id}}"  class="scroll-view-item_H demo-text-2" style="width: 20%">
+      <button data-index="{{index}}" data-id="{{user.id}}" bindtap="delete">删除</button>
+    </view>
+  </scroll-view>
+  </block>
+</view>

@@ -1,0 +1,13 @@
+/* pages/list/list.wxss */
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 50rpx;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 100%;
+  height: 50rpx;
+  align-items: center;
+}
